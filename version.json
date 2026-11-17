@@ -1,10 +1,9 @@
 {
-  "version_code": 129,
-  "version_name": "1.2.0",
+  "version_code": 100,
+  "version_name": "1.0.0",
   "min_supported_version_code": 1,
   "changelog": [
-    "Added support for uploading image in chat using camera",
-    "Added antigem mini app support to create app and install inside antigem or share to other(in beta state)"
+    "Aura AI v1.0.0 Official Release"
   ],
   "is_critical": false
 }

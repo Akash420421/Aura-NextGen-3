@@ -30,7 +30,7 @@ android {
     namespace = "com.example.gemini"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.antigem"
+        applicationId = "com.example.gemini"
         minSdk = 24
         targetSdk = 28
         versionCode = appVersionCode
@@ -48,15 +48,24 @@ android {
             keyAlias = "antigem"
             keyPassword = "123456"
         }
+        // Cloud debug artifacts use a stable, private CI keystore when present, so an updated APK can
+        // install over the previous CI build instead of receiving a different runner-generated debug key.
+        if (file("aura-debug.jks").exists()) {
+            create("auraDebug") {
+                storeFile = file("aura-debug.jks")
+                storePassword = System.getenv("AURA_DEBUG_STORE_PASSWORD") ?: ""
+                keyAlias = "aura-debug"
+                keyPassword = System.getenv("AURA_DEBUG_KEY_PASSWORD") ?: ""
+            }
+        }
     }
 
     flavorDimensions += "mode"
     productFlavors {
-        // Local ports differ per app so com.antigem and com.termux can be installed and run side by side
-        // (com.antigem: +2, so its bridge port never equals com.termux's hub port).
+        // Dedicated ports avoid attaching to another installed AntiGem/Termux bridge or hub.
         create("standard") {
             dimension = "mode"
-            applicationId = "com.antigem"
+            applicationId = "com.example.gemini"
             buildConfigField("int", "BRIDGE_PORT", "1236")
             buildConfigField("int", "HUB_PORT", "1237")
             buildConfigField("int", "BROWSER_MCP_PORT", "8767")
@@ -82,6 +91,9 @@ android {
 
     buildTypes {
         debug {
+            if (file("aura-debug.jks").exists()) {
+                signingConfig = signingConfigs.getByName("auraDebug")
+            }
         }
         release {
             isMinifyEnabled = true
@@ -95,7 +107,7 @@ android {
     }
 
     base {
-        archivesName.set("antiGem")
+        archivesName.set("AuraAI")
     }
 
     compileOptions {

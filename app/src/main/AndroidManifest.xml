@@ -292,7 +292,7 @@
             android:name="com.example.gemini.data.jarvis.JarvisTileService"
             android:exported="true"
             android:icon="@drawable/ic_jarvis_mic"
-            android:label="Jarvis"
+            android:label="Aura AI"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
@@ -458,7 +458,7 @@
         <activity
             android:name="com.example.gemini.ui.settings.ManageSpaceActivity"
             android:exported="true"
-            android:label="AntiGem Space Manager"
+            android:label="Aura AI Storage Manager"
             android:theme="@style/Theme.Gemini">
             <intent-filter>
                 <action android:name="android.intent.action.MANAGE_SPACE" />

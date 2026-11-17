@@ -1,19 +1,19 @@
 <div align="center">
 
-<img src="docs/readme/icon.svg" alt="AntiGem app icon" width="112">
+<img src="docs/readme/icon.svg" alt="Aura AI app icon" width="112">
 
-# AntiGem
+# Aura AI
 
-*A gem that defies gravity. A full coding environment, light enough to carry in your pocket.*
+*A full autonomous coding environment and AI assistant, light enough to carry in your pocket.*
 
 **An AI coding workspace for Android: Antigravity, Claude Code, OpenCode and Codex agents, a real Linux terminal, a code editor and a browser the agent can control, all in one app.**
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Go](https://img.shields.io/badge/Bridge-Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
-[![Releases](https://img.shields.io/github/v/release/santoshkurmi/antigem?style=flat-square&label=Download)](https://github.com/santoshkurmi/antigem/releases)
+[![Releases](https://img.shields.io/github/v/release/Akash420421/Aura-NextGen-3?style=flat-square&label=Download)](https://github.com/Akash420421/Aura-NextGen-3/releases)
 
-[Download](https://github.com/santoshkurmi/antigem/releases) · [Website](https://santoshkurmi.github.io/antigem/) · [VS Code extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md) · [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4)
+[Download](https://github.com/Akash420421/Aura-NextGen-3/releases) · [Source Code](https://github.com/Akash420421/Aura-NextGen-3) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md)
 
 <br>
 
@@ -228,7 +228,7 @@ Use the agents running on your PC from your phone. [AntiGem for VS Code](https:/
 
 ## Download
 
-Get the latest APK from [Releases](https://github.com/santoshkurmi/antigem/releases). There are two build variants, and one extra **mode** that works with either of them:
+Get the latest APK from [Releases](https://github.com/Akash420421/Aura-NextGen-3/releases). There are two build variants, and one extra **mode** that works with either of them:
 
 | Variant | Package name | Needs the Termux app? | Notes |
 | :--- | :--- | :---: | :--- |
@@ -396,7 +396,7 @@ The Backups & Restore screen is for the phone's own data and is hidden in Server
 **Requirements:** JDK 17+, Android SDK (API 35, Build Tools 35+) and Go 1.23+ for the bridge.
 
 ```bash
-git clone https://github.com/santoshkurmi/antigem.git
+git clone https://github.com/Akash420421/Aura-NextGen-3.git
 cd antigem
 
 # Build the termux variant
@@ -451,12 +451,10 @@ AntiGem uses [TelemetryDeck](https://telemetrydeck.com) only to count how many p
 
 ## Disclaimer
 
-AntiGem is an independent project. It is not affiliated with, endorsed by or sponsored by Google, Anthropic, OpenAI, OpenCode or any other AI provider. Antigravity, Claude, Claude Code, Codex and other product names are trademarks of their owners and are used here only to say which tools the app works with.
+Aura AI is an independent project. It is not affiliated with, endorsed by or sponsored by Google, Anthropic, OpenAI, OpenCode or any other AI provider. Antigravity, Claude, Claude Code, Codex and other product names are trademarks of their owners and are used here only to say which tools the app works with.
 
-AntiGem does not include these tools. You install each one from its official source and sign in with that tool's own login, and the app gives you an interface on top of it. Your use of each tool and account is covered by that provider's own terms, the same as when you use the tool from a terminal.
-
-AntiGem is free software, provided as is, without warranty, as described in the [license](LICENSE).
+Aura AI is free software, provided as is, without warranty, as described in the [license](LICENSE).
 
 ## License
 
-Copyright (C) 2026 Santosh Kurmi. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.
+Copyright (C) 2026 Akash Gour. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.

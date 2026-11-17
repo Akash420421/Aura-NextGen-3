@@ -83,8 +83,8 @@ class AgyVoiceCallService : Service() {
         if (Build.VERSION.SDK_INT < 26) return
         val nm = getSystemService(NotificationManager::class.java)
         if (nm.getNotificationChannel(CHANNEL) == null) {
-            nm.createNotificationChannel(NotificationChannel(CHANNEL, "Antigravity voice calls", NotificationManager.IMPORTANCE_LOW).apply {
-                description = "Shown while you are on a voice call with Antigravity"
+            nm.createNotificationChannel(NotificationChannel(CHANNEL, "Aura AI voice calls", NotificationManager.IMPORTANCE_LOW).apply {
+                description = "Shown while you are on a voice call with Aura AI"
                 setShowBadge(false)
             })
         }
