@@ -67,4 +67,5 @@ finally.zip
 scripts/render_bundle/out/
 scripts/render_bundle/.work/
 app/aura-debug.jks
+*.apk
 
